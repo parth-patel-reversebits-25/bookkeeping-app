@@ -1,7 +1,7 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
-import { LogOut, User, Menu, BookOpen } from 'lucide-react'
+import { LogOut, User, Menu } from 'lucide-react'
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import {
   DropdownMenu,
@@ -50,10 +50,6 @@ export function Header({ title, userEmail, userInitials = 'U' }: HeaderProps) {
             </Button>
           </SheetTrigger>
           <SheetContent side="left" className="p-0 w-60">
-            <div className="flex h-16 items-center gap-2 border-b px-5">
-              <BookOpen className="h-5 w-5 text-primary" />
-              <span className="text-lg font-semibold tracking-tight">Ledger</span>
-            </div>
             <Sidebar />
           </SheetContent>
         </Sheet>
