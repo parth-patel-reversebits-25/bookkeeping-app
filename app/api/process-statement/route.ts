@@ -79,8 +79,8 @@ Return ONLY valid JSON array, no markdown, no explanation.`,
     ];
 
     const response = await anthropic.messages.create({
-      model: "claude-opus-4-5",
-      max_tokens: 8192,
+      model: "claude-sonnet-4-6",
+      max_tokens: 16000,
       messages: [
         {
           role: "user",
