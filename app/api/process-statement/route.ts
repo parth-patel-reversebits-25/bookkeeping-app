@@ -92,7 +92,10 @@ Return ONLY valid JSON array, no markdown, no explanation.`,
     const rawText =
       response.content[0].type === "text" ? response.content[0].text : "";
 
-    const cleaned = rawText.replace(/^```(?:json)?\s*/i, "").replace(/\s*```\s*$/i, "").trim();
+    const cleaned = rawText
+      .replace(/^```(?:json)?\s*/i, "")
+      .replace(/\s*```\s*$/i, "")
+      .trim();
 
     let transactions: ExtractedTransaction[];
     try {
