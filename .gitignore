@@ -1,0 +1,55 @@
+# dependencies
+node_modules
+.pnp
+.pnp.js
+
+# next.js
+.next
+out
+.vercel
+
+# production
+build
+dist
+
+# env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# macOS
+.DS_Store
+
+# editor
+.vscode
+.idea
+*.swp
+*.swoosh
+
+# coverage
+coverage
+
+# typescript
+*.tsbuildinfo
+
+# supabase
+.supabase
+
+# uploads / generated files
+uploads
+tmp
+temp
+storage
+
+# optional
+*.sqlite
+*.db
